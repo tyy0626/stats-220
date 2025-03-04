@@ -1,12 +1,11 @@
-# UOA STATS 220
+# stats220
 
-## Introduction for this repo
-this is my first repo for stats 220. I'm trying to post everything online to show what I've learnt so far
+This is my repo for STATS 220. 
 
-### skills
-- **bold**
-- *italics*
+A little about me:
 
-### useful information
-1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
-2. [project instruction](https://www.stat.auckland.ac.nz/~fergusson/stats220_S124/project1.php)
+- I am undertaking a degree in data science. 
+- This is my last year for bachelor degree
+- I am interested in learning about data analysis
+
+A meme that captures how I currently feel about my university studies is ![](https://tenor.com/en-GB/view/half-asleep-sleeping-tired-super-tired-tired-meme-gif-14294371041892262270)
