@@ -1,12 +1,13 @@
 # stats220
-
-This is my repo for STATS 220. 
-
-A little about me:
-
-- I am undertaking a degree in data science
-- I am taking STATS 220 because this is the core course for my degree
-- I am interested in learning about r coding and markdown
-
-
-A meme that captures how I currently feel about my university studies is ![](https://c.tenor.com/8druEACXtX8AAAAd/tenor.gif)
+## project 1
+1. part A
+   * github editing
+   * meme editing
+2. part B
+   * choose the meme that **contain at least one image, and at least one use of text**
+3. part C
+4. part D
+5. part E
+   * *add animation to your meme*
+6. part F
+7. ![meme](https://c.tenor.com/dtgHOO7KqI4AAAAC/tenor.gif)
