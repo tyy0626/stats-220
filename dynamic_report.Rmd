@@ -1,0 +1,41 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+```{css}
+
+```
+
+## Analysis for daily observations on bus trip
+
+We can see that the mean value for people wearing headphones is about 4 and the max is 9. The first bar chart shows the crowded condition during the week. The second bar chart shows the distribution of the weather condition during the week. 
+
+```{r}
+library(tidyverse)
+logged_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vS7B1oTIrIvB9T-xNNqTHs4IUYxVeX0mFFJSp6KkmrlFRxJh_pC3HROENYrKsyoBO0g-rGVKcM3MlWF/pub?output=csv")
+latest_data <- logged_data %>% rename(bus_crowd = "Is the bus crowded today?", 
+                                      headphones = "How many people were observed wearing headphones?", 
+                                      seat_offer = "Did anyone offer their seat voluntarily?", 
+                                      weather = "What is the weather condition")
+
+#summary(latest_data)
+mean_value <- mean(latest_data$headphones, na.rm = TRUE)
+max_value <- max(latest_data$headphones, na.rm = TRUE)
+ggplot(latest_data, aes(x = weather)) +
+  geom_bar() +
+  labs(title = "Distribution of weather", 
+       x = "weather", 
+       y = "num")
+ggplot(latest_data, aes(x = bus_crowd)) +
+  geom_bar() +
+  labs(title = "Distribution of bus crowded level", 
+       x = "crowded condition", 
+       y = "num")
+paste("The mean value is", mean_value, "and the max value is", max_value)
+```
